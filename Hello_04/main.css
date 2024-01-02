@@ -56,10 +56,12 @@ img {
     width: 300px;
     height: 300px;
     border-radius: 35%;
+
 }
 section{
     display: flex;
     flex: 3; 
+    
 }
 
 article{
@@ -68,7 +70,6 @@ article{
     padding: 0.5rem;
     border: 0.7px solid red;
     text-align: center;
-
     color: rgb(12, 77, 218);
     font-weight: 900;
     font-size: 20px;

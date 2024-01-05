@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: yellow;
+            text-align: center;
+            padding: 1.5rem;
+            font-size: 40px;
+        }
+        body{
+            width: 100%;
+            height: 100%;
+        }
+        .animal{
+            display: flex;
+            width: auto;
+        }
+        main aside 종류{
+            border: 1px solid black;
+            width: 200px;
+        }
+
+        main aside li {
+            border: 1px solid blue;
+            cursor: pointer;
+            margin: 20px 10px;
+            padding: 60px;
+            border-radius: 50%;
+            text-align: center;
+
+        }
+        nav ul {
+            display: flex;
+            border: 1px solid green;
+        }
+        nav li {
+            cursor: pointer;
+            margin: 5px;
+            padding: 10px 15px;
+            border: 1px solid red;
+            list-style-type: none;   
+        }
+        nav li:nth-of-type(5) {
+            margin-left: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header>애완동물 어플리케이션</header>
+    <nav>
+        <ul class="nav_ul">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">공지사항</a></li>
+            <li><a href="#">자유게시판</a></li>
+            <li><a href="#">로그인</a></li>
+            <li><a href="#">회원가입</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="animal">
+            <aside>
+                <ul class="종류">
+                    <li><a href="#">포유류</a></li>
+                    <li><a href="#">어류</a></li>
+                    <li><a href="#">조류</a></li>
+                    <li><a href="#">파충류</a></li>
+                    <li><a href="#">양서류</a></li>
+                </ul>
+            </aside>
+        </section>
+            </main>
+</body>
+<script>
+
+</script>
+<footer>
+    <address></address>
+</footer>
+
+</html>

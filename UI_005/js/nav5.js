@@ -12,8 +12,6 @@
 */
 
 const main_nav = document.querySelector("nav.main_nav")
-
-
 main_nav.addEventListener("click", (event => {
     const target = event.target;
     
@@ -23,13 +21,13 @@ main_nav.addEventListener("click", (event => {
     if(tag_name === "LI"){
         // alert("내비 요소 클릭 : " + nav_text);
         if(nav_text === "HOME"){
+            // 홈은 절대 바꾸면 안됨.
             document.location.href = "./index.html";
         }else if(nav_text === "로그인"){
             importHTML(img_container,"./login.html");
         }else if (nav_text === "회원가입") {
             importHTML(img_container,"./join.html");
         }
-
 
     // }else {
     //     alert("내비 요소가 아닌 곳 클릭 : " + tag_name);

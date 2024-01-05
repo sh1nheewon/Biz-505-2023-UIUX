@@ -10,3 +10,6 @@ const importHTML = (tag,file) => {
     }
     xhr.send();
 }
+
+
+// 사용하려면 index.html의 script 에 가장 위에 선언해야함.

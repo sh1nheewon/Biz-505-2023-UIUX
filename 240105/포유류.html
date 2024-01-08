@@ -23,7 +23,6 @@
         }
         .animal{
             display: flex;
-            width: auto;
         }
         main aside 종류{
             border: 1px solid black;
@@ -48,13 +47,28 @@
             margin: 5px;
             padding: 10px 15px;
             border: 1px solid red;
-            list-style-type: none;   
+            list-style-type: none;  
+            
         }
-        nav li:nth-of-type(5) {
+        nav li:nth-of-type(4) {
             margin-left: auto;
+        }
+
+        .포유류 {
+            border: 1px solid red;
+        }
+
+        .포유류:focus {
+            border: 5px solid green;
+        }
+
+        article{
+            list-style-type: none; 
+            padding: 10px;
         }
     </style>
 </head>
+
 <body>
     <header>애완동물 어플리케이션</header>
     <nav>
@@ -69,18 +83,19 @@
     <main>
         <section class="animal">
             <aside>
-                <ul class="종">
-                    <li><a href="#">포유류</a></li>
-                    <li><a href="#">어류</a></li>
-                    <li><a href="#">조류</a></li>
-                    <li><a href="#">파충류</a></li>
-                    <li><a href="#">양서류</a></li>
-                </ul>
+                <ul class="포유류"><a href="#">포유류</a>
+                </ul>               
             </aside>
+            <article>
+                <li><a href="#">고양이</a></li>
+                <li><a href="#">강아지</a></li>
+                <li><a href="#">라쿤</a></li>
+            </article>
         </section>
             </main>
 </body>
 <script>
+
 </script>
 <footer>
     <address></address>

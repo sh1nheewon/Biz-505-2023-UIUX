@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            color: white;
+            background-color: blueviolet;
+            text-align: center;
+            padding: 1.3rem;
+        }
+        nav ul {
+            margin: auto;
+            display: flex;
+            background-color: black;
+        }
+        nav li {
+            cursor: pointer;
+            color: yellow;
+            list-style: none;
+            padding: 5px;
+            margin: 5px;
+
+        }
+        nav li:hover {
+            border-bottom: 3px solid yellow;
+        }
+
+        nav li:nth-of-type(4),
+        nav li:nth-of-type(5) {
+            margin-left: auto;
+        }
+
+        section {
+            height: 80vh;
+            padding: 10px;
+            text-align: center;
+        }
+        section h3 {
+            padding: 10px;
+        }
+
+        section article {
+            border: 2px solid rgb(255, 0, 157);
+            width: 50%;
+            margin: 10px auto;
+            padding: 10px;
+        }
+
+        article div {
+            display: flex;
+            padding: 10px;
+        }
+
+        label,
+        input {
+            padding: 4px;
+        }
+        
+        input {
+            width: 60%;
+        }
+        
+        label {
+            text-align: right;
+            width: 30%;
+        }
+        div button {
+            background-color: purple;
+            color: white;
+            font-size: 13px;
+            padding: 6px;
+            border: none;
+            border-radius: 20px;
+        }
+        div button:hover{
+            cursor: pointer;
+            box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+        }
+        article.login input {
+            border: 1px solid #ddd;
+            border-radius: 20px;
+        }
+        article.login input:hover {
+            background-color: #ddd;
+        }
+        footer {
+            text-align: center;
+            background-color: #ccc;
+            padding: 0.7rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>나의 홈페이지</h1>
+        <p>내가 처음으로 만드는 홈페이지 2024</p>
+    </header>
+    <nav>
+        <ul>
+            <li>홈</li>
+            <li>공지사항</li>
+            <li>자유게시판</li>
+            <li>로그인</li>
+            <li>회원가입</li>
+        </ul>
+    </nav>
+    <section>
+        <h3>로그인</h3>
+        <article class="login">
+            <div><label>ID</label><input placeholder="ID 를 입력하세요"></div>
+            <div><label>PASSWORD</label><input placeholder="PASSWORD 를 입력하세요"></div>
+            <div><label></label><button>로그인</button></div>
+        </article>
+    </section>
+    <footer>
+        <address>CopyRight &copy; tlsgmldnjs00@naver.com</address>
+    </footer>
+</body>
+</html>

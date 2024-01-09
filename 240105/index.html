@@ -23,7 +23,6 @@
         }
         .animal{
             display: flex;
-            width: auto;
         }
         main aside 종류{
             border: 1px solid black;
@@ -53,6 +52,12 @@
         nav li:nth-of-type(5) {
             margin-left: auto;
         }
+        li.포유류{
+            
+        }
+        article.포유류{
+            list-style-type: none;
+        }
     </style>
 </head>
 <body>
@@ -70,13 +75,18 @@
         <section class="animal">
             <aside>
                 <ul class="종">
-                    <li><a href="#">포유류</a></li>
+                    <li class="포유류">포유류</li>
                     <li><a href="#">어류</a></li>
                     <li><a href="#">조류</a></li>
                     <li><a href="#">파충류</a></li>
                     <li><a href="#">양서류</a></li>
                 </ul>
             </aside>
+            <article class="포유류">
+                <li>강아지</li>
+                <li>고양이</li>
+                <li></li>
+            </article>
         </section>
             </main>
 </body>

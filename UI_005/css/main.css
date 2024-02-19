@@ -20,6 +20,7 @@ html {
 body {
     height: 100%;
 }
+
 /*ㄴ HTML 초기화 코드 */
 
 /*article*6>img+figcation : article 6개 생성 + 내부에 img와 figcation 생성*/
@@ -57,13 +58,13 @@ nav ul {
 }
 
 nav li {
-           /*top,right,bottom,left*/
+    /*top,right,bottom,left*/
     padding: 12px 16px 10px 16px;
     cursor: pointer;
     margin: 5px;
     border-bottom: 3px solid transparent;
-                            /*transparent: 투명색*/
-    transition: 0.7s;                            
+    /*transparent: 투명색*/
+    transition: 0.7s;
 }
 
 nav li:nth-of-type(2) {
@@ -97,7 +98,7 @@ section.img_container img {
     padding: 5px;
 }
 
-section.img_container img:hover{
+section.img_container img:hover {
     cursor: pointer;
     opacity: 0.7;
 }
